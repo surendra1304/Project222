@@ -14,16 +14,16 @@ provider "aws" {
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
 
-  name = "Terra_Host"
+  name = "EC2_Host"
 
   instance_type          = "t2.micro"
-  key_name               = "key123"
+  key_name               = "key111"
   monitoring             = true
   vpc_security_group_ids = ["sg-09fbfbbb8ab3de876"]
   subnet_id              = "subnet-0bc76162c6652cd2a"
 
   tags = {
     Terraform   = "true"
-    Environment = "dev"
+    Environment = "Test"
   }
 }
