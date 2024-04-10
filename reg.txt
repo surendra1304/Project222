@@ -1,2 +1,6 @@
 welcome to registration process
+<<<<<<< HEAD
 user name: keshava rao
+=======
+user name: santosh kumar
+>>>>>>> registration
